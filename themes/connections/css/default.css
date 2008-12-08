@@ -537,12 +537,12 @@ span.menuclear {
 .mdg-comment { margin: 0; margin-left: 0.2in; padding: 10px; border: 1px #E1D6C6 solid; margin-bottom: 10px; background-color: #F3F6ED; }
 .tblholder   { margin: 0; margin-left: 0.2in; padding: 0px;  border: 1px #E1D6C6 solid; margin-bottom: 10px; background-color: #F3F6ED; }
 
-.tblholder th        , .mdg-comment th         { padding: 4px; background-color: #C8D6A3 !important; color: #696E5B !important; }
-.tblholder td.row1   , .mdg-comment td.row1    { padding: 4px; background-color: #E3E6DD !important; }
-.tblholder td.row2   , .mdg-comment td.row2    { padding: 4px; background-color: #F3F6ED !important; }
-.tblholder td.row3   , .mdg-comment td.row3    { padding: 4px; background-color: #EBEDE6 !important; }
-.tblholder table     , .mdg-comment table      { background-color: #FFFFFF; }
-.tblholder th.subhead, .mdg-comment th.subhead { padding: 4px; background-color: #D0D4C7 !important; color: #696E5B !important; }
+.tblholder th      { padding: 4px; background-color: #C8D6A3 !important; color: #696E5B !important; }
+.tblholder td.row1 { padding: 4px; background-color: #E3E6DD !important; }
+.tblholder td.row2 { padding: 4px; background-color: #F3F6ED !important; }
+.tblholder td.row3 { padding: 4px; background-color: #EBEDE6 !important; }
+.tblholder table   { background-color: #FFFFFF; }
+.tblholder th.subhead { padding: 4px; background-color: #D0D4C7 !important; color: #696E5B !important; }
 
 .catCheck       { padding: 3px; }
 .catCheck:hover { padding: 3px; background-color: #F3F6ED; }
