@@ -12,28 +12,24 @@
   </head>
   <body>
     
-    <div id="root1" class="jswindow">
-      <div id="tb1" class="titlebar">Confirm Logout</div>
-      <div class="content" id="cn1">
-        <form action="{CONTENTPATH}Special:Logout" method="get">
-          <div style="text-align: center">
-            <h3>Are you sure you want to log out?</h3>
-            <input type="submit" value="Log out" style="font-weight: bold;" />  <input type="button" onclick="jws.closeWin('root1');" value="Cancel" />
-          </div>
-        </form>
-      </div>  
-    </div>
-    <div id="root2" class="jswindow">
-      <div id="tb2" class="titlebar">Change style</div>
-      <div class="content" id="cn2">
-        If you can see this text, it means that your browser does not support Cascading Style Sheets (CSS). CSS is a fundemental aspect of XHTML, and as a result it is becoming very widely adopted by websites, including this one. You should consider switching to a more modern web browser, such as Mozilla Firefox or Opera 9.
-      </div>  
-    </div>
-    
     <div id="rap">
       <div id="header">
         <ul id="topnav">
-          <li>&nbsp;</li>
+          <!-- Put any additional navigation links here within list elements. -->
+          <!-- Example: <li><a href="{SCRIPTPATH}/{ADMIN_SID_AUTO}">Home</a></li> -->
+          <!-- You can insert a separator with: -->
+          <!-- <li class="sep"></li> -->
+          <li>
+            <form action="{SCRIPTPATH}/index.php" method="get" onsubmit="if ( this.q.value == 'search' ) return false;">
+              <input type="hidden" name="title" value="{NS_SPECIAL}Search" />
+              <input type="hidden" name="auth" value="{ADMIN_SID_RAW}" />
+              <input type="text" name="q" value="search" 
+                onfocus="if ( this.value == 'search' ) this.value = '';"
+                onblur=" if ( this.value == '' ) this.value = 'search';"
+                />
+              <input type="submit" value="Go" />
+            </form>
+          </li>
         </ul>
         <h1><a href="{CONTENTPATH}" title="{SITE_NAME}">{SITE_NAME}</a></h1>
         <div id="desc">{PAGE_NAME}</div>
