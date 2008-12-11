@@ -76,7 +76,13 @@ input, textarea {
 	font-size:1em;
 	color:#333;
 	display:inline;
-} 
+}
+#sidebar .heading a {
+  font-family: Georgia, "Lucida Sans Unicode", lucida, Verdana, sans-serif;
+  color: #676E04;
+  font-weight: bold;
+  font-size: 1.1em;
+}
 a img {
 	border: none;
 }
@@ -356,6 +362,7 @@ h1, h2, h3, h4 {
 	font-weight: bold;
   position: relative;
   top: -2px;
+  font-size: 1.1em;
 }
 
 #topnav li.sep {
