@@ -148,25 +148,27 @@ h1, h2, h3, h4 {
 	margin:0;
 	padding:0 20px 0 0;
 }
-#sidebar div.heading {
-	margin: 0 0 0 0;
-	padding:2px;
-	font-size: 1em;
-	color: #676E04;
-	text-align:center;
-	background:url(../img/sidenav_top.jpg) no-repeat center;
-	border:#ccc 0px solid;
-	height:22px;
-	font-weight:bold;
-}
 #sidebar div.slider {
 	list-style-type: none;
-	padding: 0 2px 0 2px;
+	padding: 2px;
 	margin: 0;
   margin-top: 7px;
 	font-size: 0.9em;	
-	border:#E1D6c6 1px solid;
-	border-top:#f3f6ed 1px solid;
+	border: #e1d6c6 1px solid;
+  background-color: #f3f6ed;
+	/* border-top: #f3f6ed 1px solid; */
+}
+#sidebar div.heading {
+	margin: 0 0 0 0;
+	padding: 2px 2px 0 2px;
+	font-size: 1em;
+	color: #676E04;
+	text-align:center;
+	/* background:url(../img/sidenav_top.jpg) no-repeat center; */
+  background-color: #e2ebda;
+	border:#ccc 0px solid;
+	height:22px;
+	font-weight:bold;
 }
 #sidebar div.slideblock {
   padding: 5px;
@@ -268,6 +270,9 @@ h1, h2, h3, h4 {
 	border-top:#BBC4A3 1px solid;	
 	font-family: Georgia, Verdana, Arial, serif;
 	font-size:12px;
+}
+.post-content-disable-border {
+  border-top-width: 0;
 }
 .page-content {
 
