@@ -12,6 +12,7 @@
   <body>
     
     <div id="rap">
+      <div id="preheader"></div>
       <div id="header">
         <ul id="topnav">
           <!-- Put any additional navigation links here within list elements. -->
@@ -30,9 +31,12 @@
             </form>
           </li>
         </ul>
-        <h1><a href="{CONTENTPATH}" title="{SITE_NAME}">{SITE_NAME}</a></h1>
-        <div id="desc">{PAGE_NAME}</div>
+        <div id="banner">
+          <h1><a href="{CONTENTPATH}" title="{SITE_NAME}">{SITE_NAME}</a></h1>
+          <div id="desc">{PAGE_NAME}</div>
+        </div>
       </div>
+      <div id="postheader"></div>
       <div class="menu_nojs" id="pagebar_main">
         <div class="label">
           <!-- BEGIN stupid_mode -->

@@ -18,7 +18,6 @@ body {
 	font-size: 0.9em;
 	/* text-align:center; */
 	color:#29303B;
-	line-height:1.3em;
 	background: #F3F6ED;
 }
 a {
@@ -40,24 +39,37 @@ input, textarea {
 	background:#fff url(../img/rap.jpg) center repeat-y;
 	width:760px;
 	margin:0 auto;
-	padding:0px 8px;
+	padding: 0 8px;
 	text-align:left;
 	font-family: Trebuchet MS,Georgia, Arial, serif;
 	font-size: 0.9em;
 }
+#preheader {
+  height: 9px;
+  background: #f6f3ee;
+}
 #header {
-	background:#fff url(../img/top.jpg) no-repeat bottom; 	
- 	height: 183px;
+	background-color: #fcfbf6; 	
 	margin: 0 auto;
-	width:760px;
-	padding:0;
-	border:#fc9 0px solid;
+	width: 741px;
+	padding: 1px 2px;
+	border: #dedccf 1px solid;
+}
+#postheader {
+  height: 7px;
+  background: #f6f3ee;
+}
+#banner {
+  background: url(../img/banner.jpg) no-repeat;
+  height: 140px;
+  padding-top: 3px;
 }
 #main {
 	margin:0 auto;
 	padding:0;
 	background:url(../img/content_bg.gif) repeat;
 	width:740px;
+	line-height: 1.3em;
 }
 #content {
 	width:510px;
@@ -127,8 +139,8 @@ h1, h2, h3, h4 {
 {
 	margin: 0;	
 	font-size: 1.6em;	
-	padding:10px 20px 0 0;
-	text-align:right;	
+	padding:10px 10px 0 0;
+	text-align:right;
 }
 #header h1 a 
 {
@@ -139,6 +151,9 @@ h1, h2, h3, h4 {
 {
 	color:#F7F3ED;
 }
+#header #banner {
+  line-height: 1.4em;
+}
 #header #desc
 {
 	font-weight:normal;
@@ -146,7 +161,7 @@ h1, h2, h3, h4 {
 	color:#B5C09D;
 	text-align:right;
 	margin:0;
-	padding:0 20px 0 0;
+	padding:0 10px 0 0;
 }
 #sidebar div.slider {
 	list-style-type: none;
@@ -172,15 +187,12 @@ h1, h2, h3, h4 {
 }
 #sidebar div.slideblock {
   padding: 5px;
-  padding-bottom: 3em;
+  padding-bottom: 2em;
   overflow: hidden;   
   background:#F3F6ED url(../img/sidenav_bottom.jpg) no-repeat bottom;
 }
 #sidebar div.slideblock2 {
-  padding: 5px;
-  padding-bottom: 3em;
-  overflow: hidden;   
-  background:#F3F6ED url(../img/sidenav_bottom.jpg) no-repeat bottom;
+  margin-top: 10px;
 }
 #sidebar div.slideblock a {
   display: block;
@@ -241,6 +253,9 @@ h1, h2, h3, h4 {
 }
 #content p {
   margin-left: 1em;
+}
+#content h3 {
+  margin: 0.4em 0 0.6em 0;
 }
 .post, .page {
 	margin:0 0 30px 0;
@@ -351,34 +366,39 @@ h1, h2, h3, h4 {
 .commentlist .alt {
 
 }
+
 #topnav {
 	list-style:none;
-	font-size:0.9em;
-	margin:0;	
-	padding:11px 20px 0 0;
+	font-size: 0.9em;
+	margin: 0 0 1px 0;
+	padding: 0 10px 0 0;
 	text-align:right;	
 	font-family:Verdana, Arial, Sans-Serif;
+	background-color: #7d8b5a;
 }
+
 #topnav li {
 	list-style: none;
 	display: inline;
 	padding: 0;
 	margin: 0;
 	font-weight: bold;
-  position: relative;
-  top: -2px;
-  font-size: 1.1em;
+  font-size: 0.9em;
 }
 
 #topnav li.sep {
-	margin-left: 3px;
-  margin-right: 3px;
-  margin-top: 1px;
-  margin-bottom: 1px;
+  margin: 0 3px;
   padding: 0;
-  padding-bottom: 2px;
   border-left: 1px solid #3B4423;
   border-right: 1px solid #F7F3ED;
+  position: relative;
+  top: -3px;
+}
+
+#topnav li a:link, #topnav li a:visited {
+  vertical-align: top;
+  position: relative;
+  top: 3px;
 }
 
 #topnav li a:link, #topnav li a:visited, #topnav li input[type ~="submit"], #topnav li input[type ~="button"], #topnav li button {
@@ -389,7 +409,6 @@ h1, h2, h3, h4 {
   border-color: #7D8B5A;
   background-color: #7D8B5A;
   padding: 3px;
-  margin: 0;
 }
 #topnav li form {
   margin: 0;
@@ -397,15 +416,22 @@ h1, h2, h3, h4 {
   display: inline;
 }
 #topnav li input[type ~="submit"], #topnav li input[type ~="button"], #topnav li button {
-  font-size: 1em;
   cursor: pointer;
+  padding: 2px;
+  margin: 0;
+  font-family: arial, helvetica, sans-serif;
+  vertical-align: bottom;
+  border-width: 0 1px;
 }
 #topnav li input[type ~="text"] {
-  padding: 2px 2px 3px 2px;
+  padding: 3px;
   background-color: #BBC4A3;
   border-color: #F7F3ED;
+  border-width: 0 1px;
   color: #5D7B3A;
   margin: 0 4px;
+  font-family: arial, helvetica, sans-serif;
+  vertical-align: bottom;
 }
 #topnav li input[type ~="text"]:focus {
   color: #1c1010;
@@ -430,7 +456,8 @@ div.pagebar#pagebarpopup a { display: block; margin: 0; }
  
 /* Exception for Connections theme */
 div#pagebar_main {
-  margin: 0px 7px 0px 8px;
+  border-top: 1px solid #e2d6c6;
+  margin: 0px 8px 0 7px;
 }
 
 div.menu, div.menu_nojs {
